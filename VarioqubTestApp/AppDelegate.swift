@@ -11,7 +11,6 @@ import MetricaAdapterReflection
 import AppMetricaCore
 
 let adapter = AppmetricaAdapter()
-let adapterGovna = VQAppmetricaAdapter()
 let configuration = AppMetricaConfiguration(apiKey: "b42685b7-6f47-4e40-934e-935a45e8d4c2")
 
 @main
