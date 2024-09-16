@@ -1,0 +1,82 @@
+PODS:
+  - AppMetricaCore (5.7.0):
+    - AppMetricaCoreUtils (= 5.7.0)
+    - AppMetricaEncodingUtils (= 5.7.0)
+    - AppMetricaFMDB (= 5.7.0)
+    - AppMetricaHostState (= 5.7.0)
+    - AppMetricaLog (= 5.7.0)
+    - AppMetricaNetwork (= 5.7.0)
+    - AppMetricaPlatform (= 5.7.0)
+    - AppMetricaProtobuf (= 5.7.0)
+    - AppMetricaProtobufUtils (= 5.7.0)
+    - AppMetricaStorageUtils (= 5.7.0)
+  - AppMetricaCoreUtils (5.7.0):
+    - AppMetricaLog (= 5.7.0)
+  - AppMetricaEncodingUtils (5.7.0):
+    - AppMetricaCoreUtils (= 5.7.0)
+    - AppMetricaLog (= 5.7.0)
+    - AppMetricaPlatform (= 5.7.0)
+  - AppMetricaFMDB (5.7.0)
+  - AppMetricaHostState (5.7.0):
+    - AppMetricaCoreUtils (= 5.7.0)
+    - AppMetricaLog (= 5.7.0)
+  - AppMetricaLog (5.7.0)
+  - AppMetricaNetwork (5.7.0):
+    - AppMetricaCoreUtils (= 5.7.0)
+    - AppMetricaLog (= 5.7.0)
+    - AppMetricaPlatform (= 5.7.0)
+  - AppMetricaPlatform (5.7.0):
+    - AppMetricaCoreUtils (= 5.7.0)
+    - AppMetricaLog (= 5.7.0)
+  - AppMetricaProtobuf (5.7.0)
+  - AppMetricaProtobufUtils (5.7.0):
+    - AppMetricaProtobuf (= 5.7.0)
+  - AppMetricaStorageUtils (5.7.0):
+    - AppMetricaCoreUtils (= 5.7.0)
+    - AppMetricaLog (= 5.7.0)
+  - Varioqub (0.7.1):
+    - Varioqub/Core (= 0.7.1)
+  - Varioqub/Core (0.7.1):
+    - Varioqub/VQSwiftProtobuf
+  - Varioqub/MetricaAdapterReflection (0.7.1):
+    - Varioqub/Core
+    - Varioqub/VQSwiftProtobuf
+  - Varioqub/VQSwiftProtobuf (0.7.1)
+
+DEPENDENCIES:
+  - AppMetricaCore (~> 5.7.0)
+  - Varioqub (~> 0.7)
+  - Varioqub/MetricaAdapterReflection (~> 0.7)
+
+SPEC REPOS:
+  trunk:
+    - AppMetricaCore
+    - AppMetricaCoreUtils
+    - AppMetricaEncodingUtils
+    - AppMetricaFMDB
+    - AppMetricaHostState
+    - AppMetricaLog
+    - AppMetricaNetwork
+    - AppMetricaPlatform
+    - AppMetricaProtobuf
+    - AppMetricaProtobufUtils
+    - AppMetricaStorageUtils
+    - Varioqub
+
+SPEC CHECKSUMS:
+  AppMetricaCore: 2b88e6d5a5aafd9663bbc6056388ac0e95b6e2f1
+  AppMetricaCoreUtils: 9ed2396aa229554bd6b7532b5f52c638275bba67
+  AppMetricaEncodingUtils: b789fa4c1e65291751d2f2ddf71f63e097abfcc8
+  AppMetricaFMDB: adc2ca20358239db4c246113e2d4f0663779839c
+  AppMetricaHostState: 70a575d9226ae3fcf9adc3f948403e45a8199a60
+  AppMetricaLog: 8903049a47249067f01839f392552e91feb72171
+  AppMetricaNetwork: a738841c6987ca81da92ba721edcda3ebced351a
+  AppMetricaPlatform: 456d620ca7816ae57d9b94c19bddc10f36fab7b3
+  AppMetricaProtobuf: 4d9c8e28bc7ee7f2df7bc0b5882b5b8734add7a5
+  AppMetricaProtobufUtils: 69272f30e19e30d814b7f05cbd1130e888764c8d
+  AppMetricaStorageUtils: d72c866868dce22626441349bcd45eeec43b9e86
+  Varioqub: 58ba926b3f00644b2474a388ccf739e7054c9750
+
+PODFILE CHECKSUM: daa7ff6d7bb62e4e4aff434382e8900b01e1db7f
+
+COCOAPODS: 1.15.2

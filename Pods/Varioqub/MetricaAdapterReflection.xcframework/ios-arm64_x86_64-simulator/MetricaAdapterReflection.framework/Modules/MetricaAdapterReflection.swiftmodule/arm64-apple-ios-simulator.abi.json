@@ -1,0 +1,1724 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppmetricaAdapter",
+        "printedName": "AppmetricaAdapter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(handleQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppmetricaAdapter",
+                "printedName": "MetricaAdapterReflection.AppmetricaAdapter",
+                "usr": "s:24MetricaAdapterReflection010AppmetricaB0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB0C11handleQueueACSo17OS_dispatch_queueC_tcfc",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB0C11handleQueueACSo17OS_dispatch_queueC_tcfc",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "varioqubName",
+            "printedName": "varioqubName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB0C12varioqubNameSSvp",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB0C12varioqubNameSSvp",
+            "moduleName": "MetricaAdapterReflection",
+            "overriding": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24MetricaAdapterReflection010AppmetricaB0C12varioqubNameSSvg",
+                "mangledName": "$s24MetricaAdapterReflection010AppmetricaB0C12varioqubNameSSvg",
+                "moduleName": "MetricaAdapterReflection",
+                "overriding": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24MetricaAdapterReflection010AppmetricaB0C",
+        "mangledName": "$s24MetricaAdapterReflection010AppmetricaB0C",
+        "moduleName": "MetricaAdapterReflection",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "MetricaAdapterReflection.AppmetricaAdapterBase"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "VarioqubReporter",
+            "printedName": "VarioqubReporter",
+            "usr": "s:8Varioqub0A8ReporterP",
+            "mangledName": "$s8Varioqub0A8ReporterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VarioqubIdProvider",
+            "printedName": "VarioqubIdProvider",
+            "usr": "s:8Varioqub0A10IdProviderP",
+            "mangledName": "$s8Varioqub0A10IdProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VarioqubNameProvider",
+            "printedName": "VarioqubNameProvider",
+            "usr": "s:8Varioqub0A12NameProviderP",
+            "mangledName": "$s8Varioqub0A12NameProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VQAppmetricaAdapter",
+        "printedName": "VQAppmetricaAdapter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VQAppmetricaAdapter",
+                "printedName": "MetricaAdapterReflection.VQAppmetricaAdapter",
+                "usr": "c:@M@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(im)init",
+            "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0CACycfc",
+            "moduleName": "MetricaAdapterReflection",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "varioqubName",
+            "printedName": "varioqubName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(py)varioqubName",
+            "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C12varioqubNameSSvp",
+            "moduleName": "MetricaAdapterReflection",
+            "objc_name": "varioqubName",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(im)varioqubName",
+                "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C12varioqubNameSSvg",
+                "moduleName": "MetricaAdapterReflection",
+                "objc_name": "varioqubName",
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchIdentifiers",
+            "printedName": "fetchIdentifiers(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.String?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.String?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(im)fetchIdentifiersWithCompletion:",
+            "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C16fetchIdentifiers10completionyySSSg_AFSo7NSErrorCSgtc_tF",
+            "moduleName": "MetricaAdapterReflection",
+            "objc_name": "fetchIdentifiersWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setExperiments",
+            "printedName": "setExperiments(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(im)setExperiments:",
+            "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C14setExperimentsyySSF",
+            "moduleName": "MetricaAdapterReflection",
+            "objc_name": "setExperiments:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTriggeredTestIds",
+            "printedName": "setTriggeredTestIds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VQTestIDSet",
+                "printedName": "Varioqub.VQTestIDSet",
+                "usr": "c:@M@Varioqub@objc(cs)VQTestIDSet"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(im)setTriggeredTestIds:",
+            "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C19setTriggeredTestIdsyy8Varioqub11VQTestIDSetCF",
+            "moduleName": "MetricaAdapterReflection",
+            "objc_name": "setTriggeredTestIds:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendActivateEvent",
+            "printedName": "sendActivateEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VQActivateEventData",
+                "printedName": "Varioqub.VQActivateEventData",
+                "usr": "c:@M@Varioqub@objc(cs)VQActivateEventData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(im)sendActivateEvent:",
+            "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C17sendActivateEventyy8Varioqub010VQActivateG4DataCF",
+            "moduleName": "MetricaAdapterReflection",
+            "objc_name": "sendActivateEvent:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomReporter",
+            "printedName": "setCustomReporter(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter(im)setCustomReporterWithApiKey:error:",
+            "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C17setCustomReporter6apiKeyySS_tKF",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MetricaAdapterReflection@objc(cs)VQAppmetricaAdapter",
+        "mangledName": "$s24MetricaAdapterReflection012VQAppmetricaB0C",
+        "moduleName": "MetricaAdapterReflection",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "VQReporter",
+            "printedName": "VQReporter",
+            "usr": "c:@M@Varioqub@objc(pl)VQReporter",
+            "mangledName": "$s8Varioqub10VQReporterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VQIdProvider",
+            "printedName": "VQIdProvider",
+            "usr": "c:@M@Varioqub@objc(pl)VQIdProvider",
+            "mangledName": "$s8Varioqub12VQIdProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VQNameProvider",
+            "printedName": "VQNameProvider",
+            "usr": "c:@M@Varioqub@objc(pl)VQNameProvider",
+            "mangledName": "$s8Varioqub14VQNameProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Var",
+        "name": "loggerModuleString",
+        "printedName": "loggerModuleString",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "LoggerModule",
+            "printedName": "Varioqub.LoggerModule",
+            "usr": "s:8Varioqub12LoggerModuleV"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:24MetricaAdapterReflection18loggerModuleString8Varioqub06LoggerE0Vvp",
+        "mangledName": "$s24MetricaAdapterReflection18loggerModuleString8Varioqub06LoggerE0Vvp",
+        "moduleName": "MetricaAdapterReflection",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoggerModule",
+                "printedName": "Varioqub.LoggerModule",
+                "usr": "s:8Varioqub12LoggerModuleV"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:24MetricaAdapterReflection18loggerModuleString8Varioqub06LoggerE0Vvg",
+            "mangledName": "$s24MetricaAdapterReflection18loggerModuleString8Varioqub06LoggerE0Vvg",
+            "moduleName": "MetricaAdapterReflection",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VQSwiftProtobuf",
+        "printedName": "VQSwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppmetricaError",
+        "printedName": "AppmetricaError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "nilReporter",
+            "printedName": "nilReporter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricaAdapterReflection.AppmetricaError.Type) -> (Swift.String) -> MetricaAdapterReflection.AppmetricaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> MetricaAdapterReflection.AppmetricaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppmetricaError",
+                        "printedName": "MetricaAdapterReflection.AppmetricaError",
+                        "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(apiKey: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricaAdapterReflection.AppmetricaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppmetricaError",
+                        "printedName": "MetricaAdapterReflection.AppmetricaError",
+                        "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO11nilReporteryACSS_tcACmF",
+            "mangledName": "$s24MetricaAdapterReflection15AppmetricaErrorO11nilReporteryACSS_tcACmF",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notImplemented",
+            "printedName": "notImplemented",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MetricaAdapterReflection.AppmetricaError.Type) -> (Swift.String) -> MetricaAdapterReflection.AppmetricaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> MetricaAdapterReflection.AppmetricaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppmetricaError",
+                        "printedName": "MetricaAdapterReflection.AppmetricaError",
+                        "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(method: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MetricaAdapterReflection.AppmetricaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppmetricaError",
+                        "printedName": "MetricaAdapterReflection.AppmetricaError",
+                        "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO14notImplementedyACSS_tcACmF",
+            "mangledName": "$s24MetricaAdapterReflection15AppmetricaErrorO14notImplementedyACSS_tcACmF",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s24MetricaAdapterReflection15AppmetricaErrorO16errorDescriptionSSSgvp",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s24MetricaAdapterReflection15AppmetricaErrorO16errorDescriptionSSSgvg",
+                "moduleName": "MetricaAdapterReflection",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:24MetricaAdapterReflection15AppmetricaErrorO",
+        "mangledName": "$s24MetricaAdapterReflection15AppmetricaErrorO",
+        "moduleName": "MetricaAdapterReflection",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppmetricaAdapterBase",
+        "printedName": "AppmetricaAdapterBase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "varioqubKey",
+            "printedName": "varioqubKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvp",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvp",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvg",
+                "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvg",
+                "moduleName": "MetricaAdapterReflection",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvs",
+                "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvs",
+                "moduleName": "MetricaAdapterReflection",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvM",
+                "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC11varioqubKeySSvM",
+                "moduleName": "MetricaAdapterReflection",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handleQueue",
+            "printedName": "handleQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC11handleQueueSo17OS_dispatch_queueCvp",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC11handleQueueSo17OS_dispatch_queueCvp",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC11handleQueueSo17OS_dispatch_queueCvg",
+                "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC11handleQueueSo17OS_dispatch_queueCvg",
+                "moduleName": "MetricaAdapterReflection",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "varioqubName",
+            "printedName": "varioqubName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC12varioqubNameSSvp",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC12varioqubNameSSvp",
+            "moduleName": "MetricaAdapterReflection",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC12varioqubNameSSvg",
+                "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC12varioqubNameSSvg",
+                "moduleName": "MetricaAdapterReflection",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setExperiments",
+            "printedName": "setExperiments(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC14setExperimentsyySSF",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC14setExperimentsyySSF",
+            "moduleName": "MetricaAdapterReflection",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTriggeredTestIds",
+            "printedName": "setTriggeredTestIds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VarioqubTestIDSet",
+                "printedName": "Varioqub.VarioqubTestIDSet",
+                "usr": "s:8Varioqub0A9TestIDSetV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC19setTriggeredTestIdsyy8Varioqub0jH5IDSetVF",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC19setTriggeredTestIdsyy8Varioqub0jH5IDSetVF",
+            "moduleName": "MetricaAdapterReflection",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendActivateEvent",
+            "printedName": "sendActivateEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VarioqubEventData",
+                "printedName": "Varioqub.VarioqubEventData",
+                "usr": "s:8Varioqub0A9EventDataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC17sendActivateEventyy8Varioqub0iH4DataVF",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC17sendActivateEventyy8Varioqub0iH4DataVF",
+            "moduleName": "MetricaAdapterReflection",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchIdentifiers",
+            "printedName": "fetchIdentifiers(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Varioqub.VarioqubIdentifiers, Varioqub.VarioqubProviderError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Varioqub.VarioqubIdentifiers, Varioqub.VarioqubProviderError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VarioqubIdentifiers",
+                        "printedName": "Varioqub.VarioqubIdentifiers",
+                        "usr": "s:8Varioqub0A11IdentifiersV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VarioqubProviderError",
+                        "printedName": "Varioqub.VarioqubProviderError",
+                        "usr": "s:8Varioqub0A13ProviderErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC16fetchIdentifiers10completionyys6ResultOy8Varioqub0jG0VAH0J13ProviderErrorOGc_tF",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC16fetchIdentifiers10completionyys6ResultOy8Varioqub0jG0VAH0J13ProviderErrorOGc_tF",
+            "moduleName": "MetricaAdapterReflection",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomRepoter",
+            "printedName": "setCustomRepoter(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC16setCustomRepoter6apiKeyySS_tKF",
+            "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC16setCustomRepoter6apiKeyySS_tKF",
+            "moduleName": "MetricaAdapterReflection",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24MetricaAdapterReflection010AppmetricaB4BaseC",
+        "mangledName": "$s24MetricaAdapterReflection010AppmetricaB4BaseC",
+        "moduleName": "MetricaAdapterReflection",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "VarioqubReporter",
+            "printedName": "VarioqubReporter",
+            "usr": "s:8Varioqub0A8ReporterP",
+            "mangledName": "$s8Varioqub0A8ReporterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VarioqubIdProvider",
+            "printedName": "VarioqubIdProvider",
+            "usr": "s:8Varioqub0A10IdProviderP",
+            "mangledName": "$s8Varioqub0A10IdProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VarioqubNameProvider",
+            "printedName": "VarioqubNameProvider",
+            "usr": "s:8Varioqub0A12NameProviderP",
+            "mangledName": "$s8Varioqub0A12NameProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      },
+      {
+        "kind": "Import",
+        "name": "Varioqub",
+        "printedName": "Varioqub",
+        "declKind": "Import",
+        "moduleName": "MetricaAdapterReflection"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/VarioqubEventData+Attributes.swift",
+      "kind": "Dictionary",
+      "offset": 209,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/VarioqubEventData+Attributes.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 12,
+      "value": "\"new_config\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/VarioqubEventData+Attributes.swift",
+      "kind": "StringLiteral",
+      "offset": 324,
+      "length": 12,
+      "value": "\"old_config\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/VarioqubEventData+Attributes.swift",
+      "kind": "StringLiteral",
+      "offset": 419,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/VarioqubEventData+Attributes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 475,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/Public\/AppmetricaAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 512,
+      "length": 29,
+      "value": "\"AppMetricaAdapterReflection\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/Public\/AppmetricaAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 100,
+      "length": 17,
+      "value": "\"MetricaAdapterReflection.AppmetricaAdapter\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/Public\/AppmetricaAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 1114,
+      "length": 15,
+      "value": "\"AMAAppMetrica\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/Public\/AppmetricaAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 1321,
+      "length": 18,
+      "value": "\"YMMYandexMetrica\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/Public\/AppmetricaAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 1527,
+      "length": 124,
+      "value": "\"AppMetrica class isn't found, check if you link AppMetrica library(AMAAppMetrica or YMMYandexMetrica classes are required)\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaAdapterCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 28,
+      "value": "\"yandex_mobile_metrica_uuid\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaAdapterCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 354,
+      "length": 17,
+      "value": "\"appmetrica_uuid\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaAdapterCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 488,
+      "length": 32,
+      "value": "\"yandex_mobile_metrica_deviceID\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaAdapterCommon.swift",
+      "kind": "StringLiteral",
+      "offset": 564,
+      "length": 21,
+      "value": "\"appmetrica_deviceID\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 91,
+      "length": 28,
+      "value": "\"extendedReporterForApiKey:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 159,
+      "length": 68,
+      "value": "\"requestStartupIdentifiersWithKeys:completionQueue:completionBlock:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 26,
+      "value": "\"setSessionExtras:forKey:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 35,
+      "value": "\"reportEvent:parameters:onFailure:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 91,
+      "length": 28,
+      "value": "\"extendedReporterForApiKey:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 159,
+      "length": 68,
+      "value": "\"requestStartupIdentifiersWithKeys:completionQueue:completionBlock:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 26,
+      "value": "\"setSessionExtras:forKey:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaSelectors.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 35,
+      "value": "\"reportEvent:parameters:onFailure:\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 29,
+      "value": "\"com.varioqub.metricaadapter\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "Array",
+      "offset": 1612,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 2135,
+      "length": 17,
+      "value": "\"VarioqubMessage\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2218,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 2238,
+      "length": 23,
+      "value": "\"encrypted_experiments\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2268,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 2288,
+      "length": 20,
+      "value": "\"triggered_test_ids\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2729,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2827,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3431,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3569,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3774,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3841,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3902,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Protobuf\/Binary\/VarioqubMessageProtobuf.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3920,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaReflectionReporterImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 66,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaReflectionReporterImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaReflectionReporterImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 637,
+      "length": 1,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 158,
+      "length": 37,
+      "value": "\"com.yandex.varioqub.activate_config\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 64,
+      "value": "\"Reporter can't be created. Seems apiKey(\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 1,
+      "value": "\") is invalid.\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 857,
+      "length": 85,
+      "value": "\"Appmetrica doesn't implement method \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 1,
+      "value": "\". Update Appmetrica to fix this issue.\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1431,
+      "length": 10,
+      "value": "\"varioqub\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1817,
+      "length": 19,
+      "value": "\"Must be overriden\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1948,
+      "length": 19,
+      "value": "\"Must be overriden\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 2144,
+      "length": 31,
+      "value": "\"setExperiment: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 2174,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 2568,
+      "length": 44,
+      "value": "\"reportTriggeredTestId: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 2611,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3047,
+      "length": 25,
+      "value": "\"sendEvent: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3071,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3492,
+      "length": 26,
+      "value": "\"fetchIdentifiers started\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3812,
+      "length": 37,
+      "value": "\"identifiers was obtained: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3848,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 4970,
+      "length": 51,
+      "value": "\"session extra data: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 5020,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 5134,
+      "length": 37,
+      "value": "\"parsing serialized data error: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Base\/Public\/AppmetricaAdapterBase.swift",
+      "kind": "StringLiteral",
+      "offset": 5170,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaReflectionImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 790,
+      "length": 92,
+      "value": "\"identifiers was obtained: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaReflectionImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 5,
+      "value": "\" error: \""
+    },
+    {
+      "filePath": "\/usr\/local\/place\/sandbox-data\/tasks\/1\/7\/2485862771\/arcadia\/mobile\/metrika\/ios\/varioqub-sdk\/metrica-adapter\/Sources\/MetricaAdapter\/Reflection\/AppmetricaReflectionImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

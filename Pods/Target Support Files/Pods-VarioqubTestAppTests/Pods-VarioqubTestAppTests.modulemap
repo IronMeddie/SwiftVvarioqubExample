@@ -1,0 +1,6 @@
+framework module Pods_VarioqubTestAppTests {
+  umbrella header "Pods-VarioqubTestAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,3 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/Core/Varioqub.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/MetricaAdapterReflection/MetricaAdapterReflection.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/VQSwiftProtobuf/VQSwiftProtobuf.framework

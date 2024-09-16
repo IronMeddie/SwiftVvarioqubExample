@@ -1,0 +1,15 @@
+${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AppMetricaCore/AppMetricaCore.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaCoreUtils/AppMetricaCoreUtils.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaEncodingUtils/AppMetricaEncodingUtils.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaFMDB/AppMetricaFMDB.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaHostState/AppMetricaHostState.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaLog/AppMetricaLog.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaNetwork/AppMetricaNetwork.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaPlatform/AppMetricaPlatform.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaProtobuf/AppMetricaProtobuf.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaProtobufUtils/AppMetricaProtobufUtils.framework
+${BUILT_PRODUCTS_DIR}/AppMetricaStorageUtils/AppMetricaStorageUtils.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/Core/Varioqub.framework/Varioqub
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/MetricaAdapterReflection/MetricaAdapterReflection.framework/MetricaAdapterReflection
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/VQSwiftProtobuf/VQSwiftProtobuf.framework/VQSwiftProtobuf

@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MetricaAdapterReflection
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import VQSwiftProtobuf
+import Varioqub
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers open class AppmetricaAdapter : MetricaAdapterReflection.AppmetricaAdapterBase {
+  public init(handleQueue: Dispatch.DispatchQueue = .main)
+  override public var varioqubName: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class VQAppmetricaAdapter : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension MetricaAdapterReflection.VQAppmetricaAdapter : Varioqub.VQReporter, Varioqub.VQIdProvider {
+  @objc final public var varioqubName: Swift.String {
+    @objc get
+  }
+  @objc final public func fetchIdentifiers(completion: @escaping Varioqub.VQIdCompletion)
+  @objc final public func setExperiments(_ experiments: Swift.String)
+  @objc final public func setTriggeredTestIds(_ testIds: Varioqub.VQTestIDSet)
+  @objc final public func sendActivateEvent(_ eventData: Varioqub.VQActivateEventData)
+}
+@objc extension MetricaAdapterReflection.VQAppmetricaAdapter {
+  @objc final public func setCustomReporter(apiKey: Swift.String) throws
+}
+public let loggerModuleString: Varioqub.LoggerModule
+public enum AppmetricaError : Swift.Error, Foundation.LocalizedError {
+  case nilReporter(apiKey: Swift.String)
+  case notImplemented(method: Swift.String)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers open class AppmetricaAdapterBase : Varioqub.VarioqubReporter, Varioqub.VarioqubIdProvider {
+  public var varioqubKey: Swift.String
+  final public let handleQueue: Dispatch.DispatchQueue
+  public var varioqubName: Swift.String {
+    get
+  }
+  open func setExperiments(_ experiments: Swift.String)
+  open func setTriggeredTestIds(_ triggeredTestIds: Varioqub.VarioqubTestIDSet)
+  open func sendActivateEvent(_ eventData: Varioqub.VarioqubEventData)
+  open func fetchIdentifiers(completion: @escaping (Swift.Result<Varioqub.VarioqubIdentifiers, Varioqub.VarioqubProviderError>) -> ())
+  open func setCustomRepoter(apiKey: Swift.String) throws
+  @objc deinit
+}

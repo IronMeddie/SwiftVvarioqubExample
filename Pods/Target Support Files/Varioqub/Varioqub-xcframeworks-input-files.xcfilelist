@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Varioqub/Varioqub-xcframeworks.sh
+${PODS_ROOT}/Varioqub/Varioqub.xcframework
+${PODS_ROOT}/Varioqub/MetricaAdapterReflection.xcframework
+${PODS_ROOT}/Varioqub/VQSwiftProtobuf.xcframework
