@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08F3056BC6CAAC1A926D42A4 /* Pods_VarioqubTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C869AE922BE5FAF3CDF8233F /* Pods_VarioqubTestApp.framework */; };
-		43F1D4D27BE171476A3A88FB /* Pods_VarioqubTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA855FE560FA64AEADC2383 /* Pods_VarioqubTestAppTests.framework */; };
-		4BCE11E941C4FE20B207D57B /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE9E579EC1D2792853BFD11 /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework */; };
+		616CDFB924DD67A812D6E655 /* Pods_VarioqubTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF09DB1E1C8DC14F7E8381F8 /* Pods_VarioqubTestAppTests.framework */; };
+		AB7E2B4D047E26DCEBE206E8 /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0D0EC38309450B3C8890BB /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework */; };
+		C72BFD4970822D712A849830 /* Pods_VarioqubTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F19F797D67A393D9E4020F /* Pods_VarioqubTestApp.framework */; };
 		EE3BA1B72C98718A006F74DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BA1B62C98718A006F74DE /* AppDelegate.swift */; };
 		EE3BA1B92C98718A006F74DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BA1B82C98718A006F74DE /* SceneDelegate.swift */; };
 		EE3BA1BB2C98718A006F74DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BA1BA2C98718A006F74DE /* ViewController.swift */; };
@@ -19,6 +19,7 @@
 		EE3BA1CE2C98718B006F74DE /* VarioqubTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BA1CD2C98718B006F74DE /* VarioqubTestAppTests.swift */; };
 		EE3BA1D82C98718B006F74DE /* VarioqubTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BA1D72C98718B006F74DE /* VarioqubTestAppUITests.swift */; };
 		EE3BA1DA2C98718B006F74DE /* VarioqubTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BA1D92C98718B006F74DE /* VarioqubTestAppUITestsLaunchTests.swift */; };
+		EE7C83EE2CB95105001AA39D /* VarioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C83ED2CB950FB001AA39D /* VarioHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		027350C0E515B373A8EB0FD8 /* Pods-VarioqubTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp.release.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp/Pods-VarioqubTestApp.release.xcconfig"; sourceTree = "<group>"; };
-		1FC6ADB55CE4DA7B96247FBE /* Pods-VarioqubTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-VarioqubTestAppTests/Pods-VarioqubTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1FE9E579EC1D2792853BFD11 /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VarioqubTestApp_VarioqubTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ACDFA5872C30CC4A4C8CF87 /* Pods-VarioqubTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-VarioqubTestAppTests/Pods-VarioqubTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		6D2B2D689D4594255D2253FB /* Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DA855FE560FA64AEADC2383 /* Pods_VarioqubTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VarioqubTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C869AE922BE5FAF3CDF8233F /* Pods_VarioqubTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VarioqubTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCFC0693A1ADAFF0E11C63E9 /* Pods-VarioqubTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp/Pods-VarioqubTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		049FD31109357AC2AEB147A3 /* Pods-VarioqubTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp.debug.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp/Pods-VarioqubTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0B5C619DC6850E098966440A /* Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F0D000BF536CA88514F0CDE /* Pods-VarioqubTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-VarioqubTestAppTests/Pods-VarioqubTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D617636BA276679641A4E91 /* Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		42871544A7A3502C49B91A1C /* Pods-VarioqubTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp.release.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp/Pods-VarioqubTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		8C0D0EC38309450B3C8890BB /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VarioqubTestApp_VarioqubTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F19F797D67A393D9E4020F /* Pods_VarioqubTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VarioqubTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF09DB1E1C8DC14F7E8381F8 /* Pods_VarioqubTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VarioqubTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3BA1B32C98718A006F74DE /* VarioqubTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VarioqubTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3BA1B62C98718A006F74DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE3BA1B82C98718A006F74DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,8 @@
 		EE3BA1D32C98718B006F74DE /* VarioqubTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VarioqubTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3BA1D72C98718B006F74DE /* VarioqubTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarioqubTestAppUITests.swift; sourceTree = "<group>"; };
 		EE3BA1D92C98718B006F74DE /* VarioqubTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarioqubTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EEC2E1D840CD511EE7E4032D /* Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig"; path = "Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EE7C83ED2CB950FB001AA39D /* VarioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarioHelper.swift; sourceTree = "<group>"; };
+		F884EA9AA8CB6E8FF0E9D9B3 /* Pods-VarioqubTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VarioqubTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-VarioqubTestAppTests/Pods-VarioqubTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F3056BC6CAAC1A926D42A4 /* Pods_VarioqubTestApp.framework in Frameworks */,
+				C72BFD4970822D712A849830 /* Pods_VarioqubTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F1D4D27BE171476A3A88FB /* Pods_VarioqubTestAppTests.framework in Frameworks */,
+				616CDFB924DD67A812D6E655 /* Pods_VarioqubTestAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,34 +86,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCE11E941C4FE20B207D57B /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework in Frameworks */,
+				AB7E2B4D047E26DCEBE206E8 /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B4A5D9DAE68E9A0DE86608C /* Frameworks */ = {
+		9B849FEE2C3F3D3E944F671F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C869AE922BE5FAF3CDF8233F /* Pods_VarioqubTestApp.framework */,
-				1FE9E579EC1D2792853BFD11 /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework */,
-				8DA855FE560FA64AEADC2383 /* Pods_VarioqubTestAppTests.framework */,
+				049FD31109357AC2AEB147A3 /* Pods-VarioqubTestApp.debug.xcconfig */,
+				42871544A7A3502C49B91A1C /* Pods-VarioqubTestApp.release.xcconfig */,
+				3D617636BA276679641A4E91 /* Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig */,
+				0B5C619DC6850E098966440A /* Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig */,
+				F884EA9AA8CB6E8FF0E9D9B3 /* Pods-VarioqubTestAppTests.debug.xcconfig */,
+				2F0D000BF536CA88514F0CDE /* Pods-VarioqubTestAppTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		9337858F429D1E46097779A8 /* Pods */ = {
+		C7B4DDDB24D30D42F50BCE4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCFC0693A1ADAFF0E11C63E9 /* Pods-VarioqubTestApp.debug.xcconfig */,
-				027350C0E515B373A8EB0FD8 /* Pods-VarioqubTestApp.release.xcconfig */,
-				6D2B2D689D4594255D2253FB /* Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig */,
-				EEC2E1D840CD511EE7E4032D /* Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig */,
-				1FC6ADB55CE4DA7B96247FBE /* Pods-VarioqubTestAppTests.debug.xcconfig */,
-				2ACDFA5872C30CC4A4C8CF87 /* Pods-VarioqubTestAppTests.release.xcconfig */,
+				93F19F797D67A393D9E4020F /* Pods_VarioqubTestApp.framework */,
+				8C0D0EC38309450B3C8890BB /* Pods_VarioqubTestApp_VarioqubTestAppUITests.framework */,
+				AF09DB1E1C8DC14F7E8381F8 /* Pods_VarioqubTestAppTests.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EE3BA1AA2C98718A006F74DE = {
@@ -121,8 +124,8 @@
 				EE3BA1CC2C98718B006F74DE /* VarioqubTestAppTests */,
 				EE3BA1D62C98718B006F74DE /* VarioqubTestAppUITests */,
 				EE3BA1B42C98718A006F74DE /* Products */,
-				9337858F429D1E46097779A8 /* Pods */,
-				1B4A5D9DAE68E9A0DE86608C /* Frameworks */,
+				9B849FEE2C3F3D3E944F671F /* Pods */,
+				C7B4DDDB24D30D42F50BCE4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +142,7 @@
 		EE3BA1B52C98718A006F74DE /* VarioqubTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE7C83ED2CB950FB001AA39D /* VarioHelper.swift */,
 				EE3BA1B62C98718A006F74DE /* AppDelegate.swift */,
 				EE3BA1B82C98718A006F74DE /* SceneDelegate.swift */,
 				EE3BA1BA2C98718A006F74DE /* ViewController.swift */,
@@ -174,11 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE3BA1DD2C98718B006F74DE /* Build configuration list for PBXNativeTarget "VarioqubTestApp" */;
 			buildPhases = (
-				9FC0FC82FC7440DC6387975C /* [CP] Check Pods Manifest.lock */,
+				721E57FAC38D592786BAB9C4 /* [CP] Check Pods Manifest.lock */,
 				EE3BA1AF2C98718A006F74DE /* Sources */,
 				EE3BA1B02C98718A006F74DE /* Frameworks */,
 				EE3BA1B12C98718A006F74DE /* Resources */,
-				FDA5201017344B67EB105C7C /* [CP] Embed Pods Frameworks */,
+				BBC3F90287F0F55048DD01EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE3BA1E02C98718B006F74DE /* Build configuration list for PBXNativeTarget "VarioqubTestAppTests" */;
 			buildPhases = (
-				FE0A9D576BBAB306E47EFF7A /* [CP] Check Pods Manifest.lock */,
+				D9AF6C503EB8658BD9C39F78 /* [CP] Check Pods Manifest.lock */,
 				EE3BA1C52C98718B006F74DE /* Sources */,
 				EE3BA1C62C98718B006F74DE /* Frameworks */,
 				EE3BA1C72C98718B006F74DE /* Resources */,
@@ -212,11 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE3BA1E32C98718B006F74DE /* Build configuration list for PBXNativeTarget "VarioqubTestAppUITests" */;
 			buildPhases = (
-				A43B5585BE170EE590F9FA38 /* [CP] Check Pods Manifest.lock */,
+				DEA1A62DC2EB1D6361B5A1F2 /* [CP] Check Pods Manifest.lock */,
 				EE3BA1CF2C98718B006F74DE /* Sources */,
 				EE3BA1D02C98718B006F74DE /* Frameworks */,
 				EE3BA1D12C98718B006F74DE /* Resources */,
-				E3A766CA32EDDB1D8260D2DA /* [CP] Embed Pods Frameworks */,
+				C8B8CFF2A35FAC8C8C7883FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,7 +303,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9FC0FC82FC7440DC6387975C /* [CP] Check Pods Manifest.lock */ = {
+		721E57FAC38D592786BAB9C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,46 +325,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A43B5585BE170EE590F9FA38 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VarioqubTestApp-VarioqubTestAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3A766CA32EDDB1D8260D2DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FDA5201017344B67EB105C7C /* [CP] Embed Pods Frameworks */ = {
+		BBC3F90287F0F55048DD01EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,7 +342,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp/Pods-VarioqubTestApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE0A9D576BBAB306E47EFF7A /* [CP] Check Pods Manifest.lock */ = {
+		C8B8CFF2A35FAC8C8C7883FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VarioqubTestApp-VarioqubTestAppUITests/Pods-VarioqubTestApp-VarioqubTestAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9AF6C503EB8658BD9C39F78 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,6 +381,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DEA1A62DC2EB1D6361B5A1F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VarioqubTestApp-VarioqubTestAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -407,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE3BA1BB2C98718A006F74DE /* ViewController.swift in Sources */,
+				EE7C83EE2CB95105001AA39D /* VarioHelper.swift in Sources */,
 				EE3BA1B72C98718A006F74DE /* AppDelegate.swift in Sources */,
 				EE3BA1B92C98718A006F74DE /* SceneDelegate.swift in Sources */,
 			);
@@ -585,7 +590,7 @@
 		};
 		EE3BA1DE2C98718B006F74DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCFC0693A1ADAFF0E11C63E9 /* Pods-VarioqubTestApp.debug.xcconfig */;
+			baseConfigurationReference = 049FD31109357AC2AEB147A3 /* Pods-VarioqubTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -614,7 +619,7 @@
 		};
 		EE3BA1DF2C98718B006F74DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 027350C0E515B373A8EB0FD8 /* Pods-VarioqubTestApp.release.xcconfig */;
+			baseConfigurationReference = 42871544A7A3502C49B91A1C /* Pods-VarioqubTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -643,7 +648,7 @@
 		};
 		EE3BA1E12C98718B006F74DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FC6ADB55CE4DA7B96247FBE /* Pods-VarioqubTestAppTests.debug.xcconfig */;
+			baseConfigurationReference = F884EA9AA8CB6E8FF0E9D9B3 /* Pods-VarioqubTestAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -664,7 +669,7 @@
 		};
 		EE3BA1E22C98718B006F74DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ACDFA5872C30CC4A4C8CF87 /* Pods-VarioqubTestAppTests.release.xcconfig */;
+			baseConfigurationReference = 2F0D000BF536CA88514F0CDE /* Pods-VarioqubTestAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,7 +690,7 @@
 		};
 		EE3BA1E42C98718B006F74DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D2B2D689D4594255D2253FB /* Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig */;
+			baseConfigurationReference = 3D617636BA276679641A4E91 /* Pods-VarioqubTestApp-VarioqubTestAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -704,7 +709,7 @@
 		};
 		EE3BA1E52C98718B006F74DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEC2E1D840CD511EE7E4032D /* Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig */;
+			baseConfigurationReference = 0B5C619DC6850E098966440A /* Pods-VarioqubTestApp-VarioqubTestAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

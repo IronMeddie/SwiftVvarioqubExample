@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VQSwiftProtobuf
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Dispatch
@@ -7,7 +7,6 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
 public struct Google_Protobuf_Any {
   public var typeURL: Swift.String {
     get
@@ -217,8 +216,8 @@ extension VQSwiftProtobuf.Google_Protobuf_FieldMask {
 }
 public enum Internal {
   public static let emptyData: Foundation.Data
-  public static func areAllInitialized(_ listOfMessages: [any VQSwiftProtobuf.Message]) -> Swift.Bool
-  public static func areAllInitialized<K>(_ mapToMessages: [K : any VQSwiftProtobuf.Message]) -> Swift.Bool where K : Swift.Hashable
+  public static func areAllInitialized(_ listOfMessages: [VQSwiftProtobuf.Message]) -> Swift.Bool
+  public static func areAllInitialized<K>(_ mapToMessages: [K : VQSwiftProtobuf.Message]) -> Swift.Bool where K : Swift.Hashable
 }
 extension VQSwiftProtobuf.Google_Protobuf_Struct : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.String
@@ -236,12 +235,12 @@ extension VQSwiftProtobuf.Message {
   public static func jsonString<C>(from collection: C, options: VQSwiftProtobuf.JSONEncodingOptions = JSONEncodingOptions()) throws -> Swift.String where Self == C.Element, C : Swift.Collection
   public static func jsonUTF8Data<C>(from collection: C, options: VQSwiftProtobuf.JSONEncodingOptions = JSONEncodingOptions()) throws -> Foundation.Data where Self == C.Element, C : Swift.Collection
   public static func array(fromJSONString jsonString: Swift.String, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
-  public static func array(fromJSONString jsonString: Swift.String, extensions: any VQSwiftProtobuf.ExtensionMap = SimpleExtensionMap(), options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func array(fromJSONString jsonString: Swift.String, extensions: VQSwiftProtobuf.ExtensionMap = SimpleExtensionMap(), options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
   public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
-  public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, extensions: any VQSwiftProtobuf.ExtensionMap = SimpleExtensionMap(), options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, extensions: VQSwiftProtobuf.ExtensionMap = SimpleExtensionMap(), options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
 }
 extension VQSwiftProtobuf.Message {
-  public init(unpackingAny: VQSwiftProtobuf.Google_Protobuf_Any, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws
+  public init(unpackingAny: VQSwiftProtobuf.Google_Protobuf_Any, extensions: VQSwiftProtobuf.ExtensionMap? = nil, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws
 }
 extension VQSwiftProtobuf.Google_Protobuf_Timestamp {
   public init(seconds: Swift.Int64 = 0, nanos: Swift.Int32 = 0)
@@ -375,24 +374,24 @@ extension VQSwiftProtobuf.Google_Protobuf_ListValue : VQSwiftProtobuf.Message, V
 }
 extension VQSwiftProtobuf.Message {
   public func serializedData(partial: Swift.Bool = false) throws -> Foundation.Data
-  @inlinable public init(serializedData data: Foundation.Data, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
+  @inlinable public init(serializedData data: Foundation.Data, extensions: VQSwiftProtobuf.ExtensionMap? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
     self.init()
     try merge(contiguousBytes: data, extensions: extensions, partial: partial, options: options)
   }
-  @inlinable public init<Bytes>(contiguousBytes bytes: Bytes, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+  @inlinable public init<Bytes>(contiguousBytes bytes: Bytes, extensions: VQSwiftProtobuf.ExtensionMap? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
     self.init()
     try merge(contiguousBytes: bytes, extensions: extensions, partial: partial, options: options)
   }
-  @inlinable public mutating func merge(serializedData data: Foundation.Data, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
+  @inlinable public mutating func merge(serializedData data: Foundation.Data, extensions: VQSwiftProtobuf.ExtensionMap? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
     try merge(contiguousBytes: data, extensions: extensions, partial: partial, options: options)
   }
-  @inlinable public mutating func merge<Bytes>(contiguousBytes bytes: Bytes, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+  @inlinable public mutating func merge<Bytes>(contiguousBytes bytes: Bytes, extensions: VQSwiftProtobuf.ExtensionMap? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
     try bytes.withUnsafeBytes { (body: UnsafeRawBufferPointer) in
       try _merge(rawBuffer: body, extensions: extensions, partial: partial, options: options)
     }
   }
   @usableFromInline
-  internal mutating func _merge(rawBuffer body: Swift.UnsafeRawBufferPointer, extensions: (any VQSwiftProtobuf.ExtensionMap)?, partial: Swift.Bool, options: VQSwiftProtobuf.BinaryDecodingOptions) throws
+  internal mutating func _merge(rawBuffer body: Swift.UnsafeRawBufferPointer, extensions: VQSwiftProtobuf.ExtensionMap?, partial: Swift.Bool, options: VQSwiftProtobuf.BinaryDecodingOptions) throws
 }
 public protocol Enum : Swift.Hashable, Swift.RawRepresentable {
   init()
@@ -404,8 +403,8 @@ extension VQSwiftProtobuf.Enum {
 }
 public protocol AnyExtensionField : Swift.CustomDebugStringConvertible {
   func hash(into hasher: inout Swift.Hasher)
-  var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension { get }
-  func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  var protobufExtension: VQSwiftProtobuf.AnyMessageExtension { get }
+  func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   mutating func decodeExtensionField<T>(decoder: inout T) throws where T : VQSwiftProtobuf.Decoder
   func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   var isInitialized: Swift.Bool { get }
@@ -418,23 +417,23 @@ extension VQSwiftProtobuf.AnyExtensionField {
 public protocol ExtensionField : Swift.Hashable, VQSwiftProtobuf.AnyExtensionField {
   associatedtype ValueType
   var value: Self.ValueType { get set }
-  init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: Self.ValueType)
-  init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: Self.ValueType)
+  init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
 }
 public struct OptionalExtensionField<T> : VQSwiftProtobuf.ExtensionField where T : VQSwiftProtobuf.FieldType {
   public typealias BaseType = T.BaseType
   public typealias ValueType = VQSwiftProtobuf.OptionalExtensionField<T>.BaseType
   public var value: VQSwiftProtobuf.OptionalExtensionField<T>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.OptionalExtensionField<T>, rhs: VQSwiftProtobuf.OptionalExtensionField<T>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalExtensionField<T>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalExtensionField<T>.ValueType)
   public var debugDescription: Swift.String {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var hashValue: Swift.Int {
     get
@@ -444,16 +443,16 @@ public struct RepeatedExtensionField<T> : VQSwiftProtobuf.ExtensionField where T
   public typealias BaseType = T.BaseType
   public typealias ValueType = [VQSwiftProtobuf.RepeatedExtensionField<T>.BaseType]
   public var value: VQSwiftProtobuf.RepeatedExtensionField<T>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.RepeatedExtensionField<T>, rhs: VQSwiftProtobuf.RepeatedExtensionField<T>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedExtensionField<T>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedExtensionField<T>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var hashValue: Swift.Int {
     get
@@ -463,16 +462,16 @@ public struct PackedExtensionField<T> : VQSwiftProtobuf.ExtensionField where T :
   public typealias BaseType = T.BaseType
   public typealias ValueType = [VQSwiftProtobuf.PackedExtensionField<T>.BaseType]
   public var value: VQSwiftProtobuf.PackedExtensionField<T>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.PackedExtensionField<T>, rhs: VQSwiftProtobuf.PackedExtensionField<T>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.PackedExtensionField<T>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.PackedExtensionField<T>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var hashValue: Swift.Int {
     get
@@ -482,16 +481,16 @@ public struct OptionalEnumExtensionField<E> : VQSwiftProtobuf.ExtensionField whe
   public typealias BaseType = E
   public typealias ValueType = E
   public var value: VQSwiftProtobuf.OptionalEnumExtensionField<E>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.OptionalEnumExtensionField<E>, rhs: VQSwiftProtobuf.OptionalEnumExtensionField<E>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalEnumExtensionField<E>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalEnumExtensionField<E>.ValueType)
   public var debugDescription: Swift.String {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var hashValue: Swift.Int {
     get
@@ -501,16 +500,16 @@ public struct RepeatedEnumExtensionField<E> : VQSwiftProtobuf.ExtensionField whe
   public typealias BaseType = E
   public typealias ValueType = [E]
   public var value: VQSwiftProtobuf.RepeatedEnumExtensionField<E>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.RepeatedEnumExtensionField<E>, rhs: VQSwiftProtobuf.RepeatedEnumExtensionField<E>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedEnumExtensionField<E>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedEnumExtensionField<E>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var hashValue: Swift.Int {
     get
@@ -520,16 +519,16 @@ public struct PackedEnumExtensionField<E> : VQSwiftProtobuf.ExtensionField where
   public typealias BaseType = E
   public typealias ValueType = [E]
   public var value: VQSwiftProtobuf.PackedEnumExtensionField<E>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.PackedEnumExtensionField<E>, rhs: VQSwiftProtobuf.PackedEnumExtensionField<E>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.PackedEnumExtensionField<E>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.PackedEnumExtensionField<E>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var hashValue: Swift.Int {
     get
@@ -539,16 +538,16 @@ public struct OptionalMessageExtensionField<M> : VQSwiftProtobuf.ExtensionField 
   public typealias BaseType = M
   public typealias ValueType = VQSwiftProtobuf.OptionalMessageExtensionField<M>.BaseType
   public var value: VQSwiftProtobuf.OptionalMessageExtensionField<M>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.OptionalMessageExtensionField<M>, rhs: VQSwiftProtobuf.OptionalMessageExtensionField<M>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalMessageExtensionField<M>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalMessageExtensionField<M>.ValueType)
   public var debugDescription: Swift.String {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -561,16 +560,16 @@ public struct RepeatedMessageExtensionField<M> : VQSwiftProtobuf.ExtensionField 
   public typealias BaseType = M
   public typealias ValueType = [VQSwiftProtobuf.RepeatedMessageExtensionField<M>.BaseType]
   public var value: VQSwiftProtobuf.RepeatedMessageExtensionField<M>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.RepeatedMessageExtensionField<M>, rhs: VQSwiftProtobuf.RepeatedMessageExtensionField<M>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedMessageExtensionField<M>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedMessageExtensionField<M>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -583,16 +582,16 @@ public struct OptionalGroupExtensionField<G> : VQSwiftProtobuf.ExtensionField wh
   public typealias BaseType = G
   public typealias ValueType = VQSwiftProtobuf.OptionalGroupExtensionField<G>.BaseType
   public var value: G
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.OptionalGroupExtensionField<G>, rhs: VQSwiftProtobuf.OptionalGroupExtensionField<G>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalGroupExtensionField<G>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.OptionalGroupExtensionField<G>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
   public var debugDescription: Swift.String {
     get
   }
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -605,16 +604,16 @@ public struct RepeatedGroupExtensionField<G> : VQSwiftProtobuf.ExtensionField wh
   public typealias BaseType = G
   public typealias ValueType = [VQSwiftProtobuf.RepeatedGroupExtensionField<G>.BaseType]
   public var value: VQSwiftProtobuf.RepeatedGroupExtensionField<G>.ValueType
-  public var protobufExtension: any VQSwiftProtobuf.AnyMessageExtension
+  public var protobufExtension: VQSwiftProtobuf.AnyMessageExtension
   public static func == (lhs: VQSwiftProtobuf.RepeatedGroupExtensionField<G>, rhs: VQSwiftProtobuf.RepeatedGroupExtensionField<G>) -> Swift.Bool
-  public init(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedGroupExtensionField<G>.ValueType)
+  public init(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, value: VQSwiftProtobuf.RepeatedGroupExtensionField<G>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
   public var debugDescription: Swift.String {
     get
   }
-  public func isEqual(other: any VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: VQSwiftProtobuf.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
-  public init?<D>(protobufExtension: any VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
+  public init?<D>(protobufExtension: VQSwiftProtobuf.AnyMessageExtension, decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -625,16 +624,16 @@ public struct RepeatedGroupExtensionField<G> : VQSwiftProtobuf.ExtensionField wh
 }
 extension VQSwiftProtobuf.Google_Protobuf_Any {
   @discardableResult
-  public static func register(messageType: any VQSwiftProtobuf.Message.Type) -> Swift.Bool
-  public static func messageType(forTypeURL url: Swift.String) -> (any VQSwiftProtobuf.Message.Type)?
-  public static func messageType(forMessageName name: Swift.String) -> (any VQSwiftProtobuf.Message.Type)?
+  public static func register(messageType: VQSwiftProtobuf.Message.Type) -> Swift.Bool
+  public static func messageType(forTypeURL url: Swift.String) -> VQSwiftProtobuf.Message.Type?
+  public static func messageType(forMessageName name: Swift.String) -> VQSwiftProtobuf.Message.Type?
 }
 public struct ExtensionFieldValueSet : Swift.Hashable {
   public static func == (lhs: VQSwiftProtobuf.ExtensionFieldValueSet, rhs: VQSwiftProtobuf.ExtensionFieldValueSet) -> Swift.Bool
   public init()
   public func hash(into hasher: inout Swift.Hasher)
   public func traverse<V>(visitor: inout V, start: Swift.Int, end: Swift.Int) throws where V : VQSwiftProtobuf.Visitor
-  public subscript(index: Swift.Int) -> (any VQSwiftProtobuf.AnyExtensionField)? {
+  public subscript(index: Swift.Int) -> VQSwiftProtobuf.AnyExtensionField? {
     get
     set
   }
@@ -2108,24 +2107,24 @@ public enum JSONEncodingError : Swift.Error {
 }
 public let defaultAnyTypeURLPrefix: Swift.String
 extension VQSwiftProtobuf.Google_Protobuf_Any {
-  public init(message: any VQSwiftProtobuf.Message, partial: Swift.Bool = false, typePrefix: Swift.String = defaultAnyTypeURLPrefix) throws
-  public init(textFormatString: Swift.String, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil) throws
-  public init(textFormatString: Swift.String, options: VQSwiftProtobuf.TextFormatDecodingOptions, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil) throws
+  public init(message: VQSwiftProtobuf.Message, partial: Swift.Bool = false, typePrefix: Swift.String = defaultAnyTypeURLPrefix) throws
+  public init(textFormatString: Swift.String, extensions: VQSwiftProtobuf.ExtensionMap? = nil) throws
+  public init(textFormatString: Swift.String, options: VQSwiftProtobuf.TextFormatDecodingOptions, extensions: VQSwiftProtobuf.ExtensionMap? = nil) throws
   public func isA<M>(_ type: M.Type) -> Swift.Bool where M : VQSwiftProtobuf.Message
   public func hash(into hasher: inout Swift.Hasher)
 }
 public protocol AnyMessageExtension {
   var fieldNumber: Swift.Int { get }
   var fieldName: Swift.String { get }
-  var messageType: any VQSwiftProtobuf.Message.Type { get }
-  func _protobuf_newField<D>(decoder: inout D) throws -> (any VQSwiftProtobuf.AnyExtensionField)? where D : VQSwiftProtobuf.Decoder
+  var messageType: VQSwiftProtobuf.Message.Type { get }
+  func _protobuf_newField<D>(decoder: inout D) throws -> VQSwiftProtobuf.AnyExtensionField? where D : VQSwiftProtobuf.Decoder
 }
 public class MessageExtension<FieldType, MessageType> : VQSwiftProtobuf.AnyMessageExtension where FieldType : VQSwiftProtobuf.ExtensionField, MessageType : VQSwiftProtobuf.Message {
   final public let fieldNumber: Swift.Int
   final public let fieldName: Swift.String
-  final public let messageType: any VQSwiftProtobuf.Message.Type
+  final public let messageType: VQSwiftProtobuf.Message.Type
   public init(_protobuf_fieldNumber: Swift.Int, fieldName: Swift.String)
-  public func _protobuf_newField<D>(decoder: inout D) throws -> (any VQSwiftProtobuf.AnyExtensionField)? where D : VQSwiftProtobuf.Decoder
+  public func _protobuf_newField<D>(decoder: inout D) throws -> VQSwiftProtobuf.AnyExtensionField? where D : VQSwiftProtobuf.Decoder
   @objc deinit
 }
 public enum BinaryDecodingError : Swift.Error {
@@ -2200,11 +2199,11 @@ public protocol Decoder {
   mutating func decodeMapField<KeyType, ValueType>(fieldType: VQSwiftProtobuf._ProtobufMap<KeyType, ValueType>.Type, value: inout VQSwiftProtobuf._ProtobufMap<KeyType, ValueType>.BaseType) throws where KeyType : VQSwiftProtobuf.MapKeyType, ValueType : VQSwiftProtobuf.MapValueType
   mutating func decodeMapField<KeyType, ValueType>(fieldType: VQSwiftProtobuf._ProtobufEnumMap<KeyType, ValueType>.Type, value: inout VQSwiftProtobuf._ProtobufEnumMap<KeyType, ValueType>.BaseType) throws where KeyType : VQSwiftProtobuf.MapKeyType, ValueType : VQSwiftProtobuf.Enum, ValueType.RawValue == Swift.Int
   mutating func decodeMapField<KeyType, ValueType>(fieldType: VQSwiftProtobuf._ProtobufMessageMap<KeyType, ValueType>.Type, value: inout VQSwiftProtobuf._ProtobufMessageMap<KeyType, ValueType>.BaseType) throws where KeyType : VQSwiftProtobuf.MapKeyType, ValueType : Swift.Hashable, ValueType : VQSwiftProtobuf.Message
-  mutating func decodeExtensionField(values: inout VQSwiftProtobuf.ExtensionFieldValueSet, messageType: any VQSwiftProtobuf.Message.Type, fieldNumber: Swift.Int) throws
-  mutating func decodeExtensionFieldsAsMessageSet(values: inout VQSwiftProtobuf.ExtensionFieldValueSet, messageType: any VQSwiftProtobuf.Message.Type) throws
+  mutating func decodeExtensionField(values: inout VQSwiftProtobuf.ExtensionFieldValueSet, messageType: VQSwiftProtobuf.Message.Type, fieldNumber: Swift.Int) throws
+  mutating func decodeExtensionFieldsAsMessageSet(values: inout VQSwiftProtobuf.ExtensionFieldValueSet, messageType: VQSwiftProtobuf.Message.Type) throws
 }
 extension VQSwiftProtobuf.Decoder {
-  public mutating func decodeExtensionFieldsAsMessageSet(values: inout VQSwiftProtobuf.ExtensionFieldValueSet, messageType: any VQSwiftProtobuf.Message.Type) throws
+  public mutating func decodeExtensionFieldsAsMessageSet(values: inout VQSwiftProtobuf.ExtensionFieldValueSet, messageType: VQSwiftProtobuf.Message.Type) throws
 }
 public protocol ProtobufAPIVersion_2 {
 }
@@ -2224,9 +2223,9 @@ public enum BinaryDelimited {
       get
     }
   }
-  public static func serialize(message: any VQSwiftProtobuf.Message, to stream: Foundation.OutputStream, partial: Swift.Bool = false) throws
-  public static func parse<M>(messageType: M.Type, from stream: Foundation.InputStream, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws -> M where M : VQSwiftProtobuf.Message
-  public static func merge<M>(into message: inout M, from stream: Foundation.InputStream, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws where M : VQSwiftProtobuf.Message
+  public static func serialize(message: VQSwiftProtobuf.Message, to stream: Foundation.OutputStream, partial: Swift.Bool = false) throws
+  public static func parse<M>(messageType: M.Type, from stream: Foundation.InputStream, extensions: VQSwiftProtobuf.ExtensionMap? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws -> M where M : VQSwiftProtobuf.Message
+  public static func merge<M>(into message: inout M, from stream: Foundation.InputStream, extensions: VQSwiftProtobuf.ExtensionMap? = nil, partial: Swift.Bool = false, options: VQSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) throws where M : VQSwiftProtobuf.Message
 }
 public struct _NameMap : Swift.ExpressibleByDictionaryLiteral {
   public enum NameDescription {
@@ -2274,9 +2273,9 @@ extension VQSwiftProtobuf.Message {
   public func jsonString(options: VQSwiftProtobuf.JSONEncodingOptions = JSONEncodingOptions()) throws -> Swift.String
   public func jsonUTF8Data(options: VQSwiftProtobuf.JSONEncodingOptions = JSONEncodingOptions()) throws -> Foundation.Data
   public init(jsonString: Swift.String, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws
-  public init(jsonString: Swift.String, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws
+  public init(jsonString: Swift.String, extensions: VQSwiftProtobuf.ExtensionMap? = nil, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws
   public init(jsonUTF8Data: Foundation.Data, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws
-  public init(jsonUTF8Data: Foundation.Data, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws
+  public init(jsonUTF8Data: Foundation.Data, extensions: VQSwiftProtobuf.ExtensionMap? = nil, options: VQSwiftProtobuf.JSONDecodingOptions = JSONDecodingOptions()) throws
 }
 public struct Google_Protobuf_DoubleValue {
   public var value: Swift.Double
@@ -2439,7 +2438,7 @@ public protocol Message : Swift.CustomDebugStringConvertible {
   mutating func decodeMessage<D>(decoder: inout D) throws where D : VQSwiftProtobuf.Decoder
   func traverse<V>(visitor: inout V) throws where V : VQSwiftProtobuf.Visitor
   func hash(into hasher: inout Swift.Hasher)
-  func isEqualTo(message: any VQSwiftProtobuf.Message) -> Swift.Bool
+  func isEqualTo(message: VQSwiftProtobuf.Message) -> Swift.Bool
 }
 extension VQSwiftProtobuf.Message {
   public var isInitialized: Swift.Bool {
@@ -2455,7 +2454,7 @@ public protocol _MessageImplementationBase : Swift.Hashable, VQSwiftProtobuf.Mes
   func _protobuf_generated_isEqualTo(other: Self) -> Swift.Bool
 }
 extension VQSwiftProtobuf._MessageImplementationBase {
-  public func isEqualTo(message: any VQSwiftProtobuf.Message) -> Swift.Bool
+  public func isEqualTo(message: VQSwiftProtobuf.Message) -> Swift.Bool
   public static func == (lhs: Self, rhs: Self) -> Swift.Bool
   public func _protobuf_generated_isEqualTo(other: Self) -> Swift.Bool
 }
@@ -2659,30 +2658,30 @@ public struct UnknownStorage : Swift.Equatable {
 extension VQSwiftProtobuf.Message {
   public func textFormatString() -> Swift.String
   public func textFormatString(options: VQSwiftProtobuf.TextFormatEncodingOptions) -> Swift.String
-  public init(textFormatString: Swift.String, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil) throws
-  public init(textFormatString: Swift.String, options: VQSwiftProtobuf.TextFormatDecodingOptions, extensions: (any VQSwiftProtobuf.ExtensionMap)? = nil) throws
+  public init(textFormatString: Swift.String, extensions: VQSwiftProtobuf.ExtensionMap? = nil) throws
+  public init(textFormatString: Swift.String, options: VQSwiftProtobuf.TextFormatDecodingOptions, extensions: VQSwiftProtobuf.ExtensionMap? = nil) throws
 }
 public protocol ExtensionMap {
-  subscript(messageType: any VQSwiftProtobuf.Message.Type, fieldNumber: Swift.Int) -> (any VQSwiftProtobuf.AnyMessageExtension)? { get }
-  func fieldNumberForProto(messageType: any VQSwiftProtobuf.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
+  subscript(messageType: VQSwiftProtobuf.Message.Type, fieldNumber: Swift.Int) -> VQSwiftProtobuf.AnyMessageExtension? { get }
+  func fieldNumberForProto(messageType: VQSwiftProtobuf.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
 }
 public struct SimpleExtensionMap : VQSwiftProtobuf.ExtensionMap, Swift.ExpressibleByArrayLiteral, Swift.CustomDebugStringConvertible {
   public typealias Element = VQSwiftProtobuf.AnyMessageExtension
   public init()
-  public init(arrayLiteral: any VQSwiftProtobuf.AnyMessageExtension...)
+  public init(arrayLiteral: VQSwiftProtobuf.SimpleExtensionMap.Element...)
   public init(_ others: VQSwiftProtobuf.SimpleExtensionMap...)
-  public subscript(messageType: any VQSwiftProtobuf.Message.Type, fieldNumber: Swift.Int) -> (any VQSwiftProtobuf.AnyMessageExtension)? {
+  public subscript(messageType: VQSwiftProtobuf.Message.Type, fieldNumber: Swift.Int) -> VQSwiftProtobuf.AnyMessageExtension? {
     get
   }
-  public func fieldNumberForProto(messageType: any VQSwiftProtobuf.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
-  public mutating func insert(_ newValue: any VQSwiftProtobuf.AnyMessageExtension)
-  public mutating func insert(contentsOf: [any VQSwiftProtobuf.AnyMessageExtension])
+  public func fieldNumberForProto(messageType: VQSwiftProtobuf.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
+  public mutating func insert(_ newValue: VQSwiftProtobuf.SimpleExtensionMap.Element)
+  public mutating func insert(contentsOf: [VQSwiftProtobuf.SimpleExtensionMap.Element])
   public mutating func formUnion(_ other: VQSwiftProtobuf.SimpleExtensionMap)
   public func union(_ other: VQSwiftProtobuf.SimpleExtensionMap) -> VQSwiftProtobuf.SimpleExtensionMap
   public var debugDescription: Swift.String {
     get
   }
-  public typealias ArrayLiteralElement = any VQSwiftProtobuf.AnyMessageExtension
+  public typealias ArrayLiteralElement = VQSwiftProtobuf.SimpleExtensionMap.Element
 }
 public enum BinaryEncodingError : Swift.Error {
   case anyTranscodeFailure

@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/Varioqub-Swift.h</key>
 		<data>
-		xATD8jjVufrHF94jvMx6IcVjGXg=
+		IyHfVmHafoixPW5Z79zQSMRrE7Q=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mQngpgBq0JIGGmbZjBpUxdEuLzA=
+		8z7UhNQ0DfRQzh0GKb8e4W+hJsI=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		n9ZPr1dFJcV/Am5AY9Lv46TEzeE=
+		/xQi190AA3xXjjDrUjQ883xMq1w=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		L5PgZV8Doe5R8ARjVW0eXRS0bo4=
+		Bw8I4aHedoO5sge+8vrVzi4o3o0=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dwXsX9N3JxD0hvXmDw3VbD4QquA=
+		nVTwyoUT8xumFtMf4cxT2osnyBI=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		L5PgZV8Doe5R8ARjVW0eXRS0bo4=
+		Bw8I4aHedoO5sge+8vrVzi4o3o0=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		d1T5DVpReoWdIqfVAAjQalfG6ys=
+		Lc76M5WAD1OCaonvJciuApAFykQ=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		n9ZPr1dFJcV/Am5AY9Lv46TEzeE=
+		/xQi190AA3xXjjDrUjQ883xMq1w=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+ioo1jyjML04PLqv6AQQX42WXBI=
+		CLScU26GP/28nLCvb7D61UdMF20=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xk9XK7OUgJUDGC6ukwY7qIphVw4=
+		o097hEdly+JHqd9yUegvYMA1bh8=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+ioo1jyjML04PLqv6AQQX42WXBI=
+		CLScU26GP/28nLCvb7D61UdMF20=
 		</data>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5npUby2NmRWWq59m0zpwTZu8mvs=
+		vJGXmalEXV21AJ/6rCCH9H+PhQg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,77 +63,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LH4a++sjMRFLWOEHpO2L8eUYIRdw9vDRl1LUN6YfDcY=
+			Lc0RA7cxRycL/fvU4IRmUC3bKZmd/BEW9+oARTZVrfI=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uZxhCi8q4KnWHbSOue1dtd8FlnZiGW4ec/iXXbcZ/tM=
+			aOAJ60lLkKbCs+QL8IZMIRSd53/yS9GOhVPqQsC9zCo=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zZvx1wUoghI27g+t3qPRsI0tEjjgLp5j/vw72J7zOds=
+			k0f4FKJcqtzDTjki7B1xBxYoBzXQc5N8EmOsFCVM/2M=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VGzjAnxrgvjnxy/qtzP5PApeoq25VwBEWar0y8gmeWo=
+			NNxEWkUk48yimrttxy+eLkt1DPd5MbEv5F1cBha341I=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zZvx1wUoghI27g+t3qPRsI0tEjjgLp5j/vw72J7zOds=
+			k0f4FKJcqtzDTjki7B1xBxYoBzXQc5N8EmOsFCVM/2M=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozD1pc1iaTLhN24Rz2JbbqywYMiTfocT5o+3pcyLHyk=
+			xxq7UFosvIa2MnhWxkItUxzVWoEMidnhFBufuKRAsW8=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uZxhCi8q4KnWHbSOue1dtd8FlnZiGW4ec/iXXbcZ/tM=
+			aOAJ60lLkKbCs+QL8IZMIRSd53/yS9GOhVPqQsC9zCo=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VleRjsmKxAX6KHbVF4pljreYQ0VANxult3HabBYFla8=
+			KbHdH6E5ZGiuuUE5KMW/93wJhGldUU/h1M4LZ5KsmpA=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zj445dZPcGni75Uh+a5g1ibz+S3AtR3wy0O2LYyHNB4=
+			S4UWl6SRWX9orNZTd/uxmArCaNg7Q67zS4FpPDoVs58=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VleRjsmKxAX6KHbVF4pljreYQ0VANxult3HabBYFla8=
+			KbHdH6E5ZGiuuUE5KMW/93wJhGldUU/h1M4LZ5KsmpA=
 			</data>
 		</dict>
 		<key>Modules/Varioqub.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mks3tC4WvO9Zmske5bx3uPJVPVhescFZUKNr/S8MGr4=
+			QzSfW2fgh5G4wHpZ0+Z+APMG7BWKcNrNyA07foi2zHk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

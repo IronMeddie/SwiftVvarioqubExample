@@ -176,35 +176,11 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaCore/AppMetricaCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaCoreUtils/AppMetricaCoreUtils.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaEncodingUtils/AppMetricaEncodingUtils.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaFMDB/AppMetricaFMDB.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaHostState/AppMetricaHostState.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaLog/AppMetricaLog.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaNetwork/AppMetricaNetwork.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaPlatform/AppMetricaPlatform.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaProtobuf/AppMetricaProtobuf.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaProtobufUtils/AppMetricaProtobufUtils.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaStorageUtils/AppMetricaStorageUtils.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/Core/Varioqub.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/MetricaAdapterReflection/MetricaAdapterReflection.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/VQSwiftProtobuf/VQSwiftProtobuf.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaCore/AppMetricaCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaCoreUtils/AppMetricaCoreUtils.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaEncodingUtils/AppMetricaEncodingUtils.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaFMDB/AppMetricaFMDB.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaHostState/AppMetricaHostState.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaLog/AppMetricaLog.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaNetwork/AppMetricaNetwork.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaPlatform/AppMetricaPlatform.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaProtobuf/AppMetricaProtobuf.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaProtobufUtils/AppMetricaProtobufUtils.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AppMetricaStorageUtils/AppMetricaStorageUtils.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/Core/Varioqub.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/MetricaAdapterReflection/MetricaAdapterReflection.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Varioqub/VQSwiftProtobuf/VQSwiftProtobuf.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

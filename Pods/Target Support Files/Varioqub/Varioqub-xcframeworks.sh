@@ -23,12 +23,6 @@ variant_for_slice()
   "Varioqub.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "MetricaAdapterReflection.xcframework/ios-arm64")
-    echo ""
-    ;;
-  "MetricaAdapterReflection.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "VQSwiftProtobuf.xcframework/ios-arm64")
     echo ""
     ;;
@@ -45,12 +39,6 @@ archs_for_slice()
     echo "arm64"
     ;;
   "Varioqub.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
-  "MetricaAdapterReflection.xcframework/ios-arm64")
-    echo "arm64"
-    ;;
-  "MetricaAdapterReflection.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   "VQSwiftProtobuf.xcframework/ios-arm64")
@@ -142,6 +130,5 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/Varioqub/Varioqub.xcframework" "Varioqub/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/Varioqub/MetricaAdapterReflection.xcframework" "Varioqub/MetricaAdapterReflection" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/Varioqub/VQSwiftProtobuf.xcframework" "Varioqub/VQSwiftProtobuf" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 
